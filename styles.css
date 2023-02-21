@@ -58,14 +58,69 @@ body {
     grid-column: 2 / 3;
     background-color: white;
     font-family: sans-serif;
+
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.header-item {
+    padding-left: 40px;
+}
+
+.header-item:nth-child(even) {
+    padding-right: 40px;
 }
 
 #search-bar {
-    display: flex;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
 
+    display: flex;
+    align-items: center;
+}
+
+#search-bar form {
+    padding-left: 10px;
+}
+
+#user-area {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+}
+
+#user-area > div {
+    padding-left: 20px;
+}
+
+#welcome-banner {
+    display: flex;
+    align-items: center;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting > h2 {
+    margin: 0;
+}
+
+.greeting > h1 {
+    margin: 0;
+}
+
+#header-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+#header-buttons > button {
+    margin-left: 20px;
 }
 
 .main-content {
