@@ -44,7 +44,7 @@ body {
 
 .main-link {
     padding: 0 0 20px 0;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .sidebar-link:hover {
@@ -63,26 +63,49 @@ body {
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
     gap: 20px;
-}
 
-.header-item {
-    padding-left: 40px;
-}
-
-.header-item:nth-child(even) {
-    padding-right: 40px;
-}
-
-#search-bar {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-
-    display: flex;
     align-items: center;
 }
 
-#search-bar form {
+.header-item {
+    padding-left: 60px;
+}
+
+.header-item:nth-child(even) {
+    padding-right: 60px;
+}
+
+#search {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+#search form {
     padding-left: 10px;
+    width: 100%;
+
+}
+
+#search-bar {
+    appearance: none;
+    border: none;
+    background-color: #DDDDDD;
+    line-height: 24px;
+    border-radius: 10px;
+    width: 80%;
+    min-width: 100px;
+}
+
+#search-bar:focus {
+    outline: 2px solid #0074D9;
+}
+
+#search-bar:focus::placeholder {
+    color: transparent;
 }
 
 #user-area {
@@ -101,16 +124,28 @@ body {
 }
 
 .greeting {
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.greeting > h2 {
+.greeting h2 {
     margin: 0;
+    font-size: 20px;
 }
 
-.greeting > h1 {
+.greeting h1 {
     margin: 0;
+    font-size: 24px;
+}
+
+h1 span {
+    color: #0074D9;
+}
+
+h1 span:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #header-buttons {
@@ -119,8 +154,20 @@ body {
     align-items: flex-start;
 }
 
-#header-buttons > button {
+#header-buttons button {
     margin-left: 20px;
+    color: white;
+    background-color: #0074D9;
+    border-radius: 20px;
+    
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+}
+
+#header-buttons button:hover {
+    background-color: #1492ff;
+    cursor: pointer;
 }
 
 .main-content {
