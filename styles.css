@@ -150,6 +150,12 @@ h1 span:hover {
     text-decoration: underline;
 }
 
+.hover-big:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
 #header-buttons {
     display: flex;
     justify-content: end;
@@ -170,6 +176,7 @@ h1 span:hover {
 #header-buttons button:hover {
     background-color: #1492ff;
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .main-content {
@@ -179,7 +186,7 @@ h1 span:hover {
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     background-color: lightgray;
 }   
 
@@ -265,6 +272,11 @@ div.card-text > * {
     font-size: 14px;
     margin: 0;
     padding: 0;
+}
+
+.announcements-text h4:hover {
+    cursor: pointer ;
+    transform: scale(1.02);
 }
 
 .announcements-text p {
