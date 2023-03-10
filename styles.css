@@ -94,8 +94,8 @@ svg {
 }
 
 .header svg {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     display: block;
 }
 
@@ -136,6 +136,7 @@ svg {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     display: flex;
+    align-items: center;
 }
 
 #user-area > div {
@@ -227,7 +228,7 @@ h1 span:hover {
 .project-grid {
     display: grid;
     font-family: 'Roboto', sans-serif;;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     gap: 30px;
     padding: 0 20px 0 0;
 }
@@ -269,8 +270,14 @@ div.card-text > * {
 .card-buttons {
     display: flex;
     justify-content: end;
+    align-items: center;
+    gap: 16px;
 }
 
+.card-buttons svg {
+    height: 28px;
+    width: 28px;
+}
 
 .general-shadow {
     box-shadow: 2px 2px 3px darkgray;
