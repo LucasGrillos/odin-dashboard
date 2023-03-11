@@ -93,6 +93,18 @@ svg {
     padding-right: 60px;
 }
 
+.avi-small {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.avi-large {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+
 .header svg {
     width: 24px;
     height: 24px;
